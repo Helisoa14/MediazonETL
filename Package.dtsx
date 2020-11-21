@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{83A25B11-0AC5-4EDD-A214-6F7CAEBE019E}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{6CB3C372-1FED-4C24-AD0E-7FFAEF02D8C3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7281,12 +7281,6 @@ where [refTable].[code] = ?</property>
                       cachedName="amount"
                       lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[amount]" />
                     <inputColumn
-                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[shipping]"
-                      cachedDataType="wstr"
-                      cachedLength="10"
-                      cachedName="shipping"
-                      lineageId="Package\ETL Commandes\303:invalid" />
-                    <inputColumn
                       refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[customer_id]"
                       cachedDataType="i4"
                       cachedName="customer_id"
@@ -7303,52 +7297,46 @@ where [refTable].[code] = ?</property>
                       cachedName="currency_id"
                       lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[currency_id]" />
                     <inputColumn
-                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[shipping (1)]"
-                      cachedDataType="wstr"
-                      cachedLength="10"
-                      cachedName="shipping (1)"
-                      lineageId="Package\ETL Commandes\327:invalid" />
-                    <inputColumn
                       refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[shipping_date]"
                       cachedDataType="i4"
                       cachedName="shipping_date"
                       lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[shipping_date]" />
                     <inputColumn
-                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[customer_id (1)_unmapped]"
+                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[customer_id (1)]"
                       cachedDataType="i4"
-                      cachedName="customer_id (1)_unmapped"
-                      lineageId="Package\ETL Commandes\1058:invalid" />
+                      cachedName="customer_id (1)"
+                      lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[customer_id (1)]" />
                     <inputColumn
-                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[order_date (1)_unmapped]"
+                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[order_date (1)]"
                       cachedDataType="i4"
-                      cachedName="order_date (1)_unmapped"
-                      lineageId="Package\ETL Commandes\1060:invalid" />
+                      cachedName="order_date (1)"
+                      lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[order_date (1)]" />
                     <inputColumn
-                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[shipping_date (1)_unmapped]"
+                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[shipping_date (1)]"
                       cachedDataType="i4"
-                      cachedName="shipping_date (1)_unmapped"
-                      lineageId="Package\ETL Commandes\1061:invalid" />
+                      cachedName="shipping_date (1)"
+                      lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[shipping_date (1)]" />
                     <inputColumn
-                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[warehouse_id (1)_unmapped]"
+                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[warehouse_id (1)]"
                       cachedDataType="i4"
-                      cachedName="warehouse_id (1)_unmapped"
-                      lineageId="Package\ETL Commandes\1062:invalid" />
+                      cachedName="warehouse_id (1)"
+                      lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[warehouse_id (1)]" />
                     <inputColumn
-                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[currency_id (1)_unmapped]"
+                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[currency_id (1)]"
                       cachedDataType="wstr"
                       cachedLength="3"
-                      cachedName="currency_id (1)_unmapped"
-                      lineageId="Package\ETL Commandes\1057:invalid" />
+                      cachedName="currency_id (1)"
+                      lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[currency_id (1)]" />
                     <inputColumn
-                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[items (1)_unmapped]"
+                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[items (1)]"
                       cachedDataType="i4"
-                      cachedName="items (1)_unmapped"
-                      lineageId="Package\ETL Commandes\1059:invalid" />
+                      cachedName="items (1)"
+                      lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[items (1)]" />
                     <inputColumn
-                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[amount (1)_unmapped]"
+                      refId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input].Columns[amount (1)]"
                       cachedDataType="r8"
-                      cachedName="amount (1)_unmapped"
-                      lineageId="Package\ETL Commandes\1056:invalid" />
+                      cachedName="amount (1)"
+                      lineageId="Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[amount (1)]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -7368,13 +7356,13 @@ where [refTable].[code] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">(#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[order_date]} != #{Package\ETL Commandes\1060:invalid}) || (([ISNULL](#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[shipping_date]}) ? 0 : #{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[shipping_date]}) != ([ISNULL](#{Package\ETL Commandes\1061:invalid}) ? 0 : #{Package\ETL Commandes\1061:invalid})) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[customer_id]} != #{Package\ETL Commandes\1058:invalid}) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[warehouse_id]} != #{Package\ETL Commandes\1062:invalid}) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[currency_id]} != #{Package\ETL Commandes\1057:invalid}) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[items]} != #{Package\ETL Commandes\1059:invalid}) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[amount]} != #{Package\ETL Commandes\1056:invalid}) || (([ISNULL](#{Package\ETL Commandes\303:invalid}) ? "" : #{Package\ETL Commandes\303:invalid}) != ([ISNULL](#{Package\ETL Commandes\327:invalid}) ? "" : #{Package\ETL Commandes\327:invalid}))</property>
+                      name="Expression">(#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[order_date]} != #{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[order_date (1)]}) || (([ISNULL](#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[shipping_date]}) ? 0 : #{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[shipping_date]}) != ([ISNULL](#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[shipping_date (1)]}) ? 0 : #{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[shipping_date (1)]})) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[customer_id]} != #{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[customer_id (1)]}) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[warehouse_id]} != #{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[warehouse_id (1)]}) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[currency_id]} != #{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[currency_id (1)]}) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[items]} != #{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[items (1)]}) || (#{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[amount]} != #{Package\ETL Commandes\Merge Join.Outputs[Merge Join Output].Columns[amount (1)]})</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">(order_date != [order_date (1)]) || ((ISNULL(shipping_date) ? 0 : shipping_date) != (ISNULL([shipping_date (1)]) ? 0 : [shipping_date (1)])) || (customer_id != [customer_id (1)]) || (warehouse_id != [warehouse_id (1)]) || (currency_id != [currency_id (1)]) || (items != [items (1)]) || (amount != [amount (1)]) || ((ISNULL(shipping) ? "" : shipping) != (ISNULL([shipping (1)]) ? "" : [shipping (1)]))</property>
+                      name="FriendlyExpression">(order_date != [order_date (1)]) || ((ISNULL(shipping_date) ? 0 : shipping_date) != (ISNULL([shipping_date (1)]) ? 0 : [shipping_date (1)])) || (customer_id != [customer_id (1)]) || (warehouse_id != [warehouse_id (1)]) || (currency_id != [currency_id (1)]) || (items != [items (1)]) || (amount != [amount (1)])</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -8449,35 +8437,35 @@ where [refTable].[code] = ?</property>
               name="insert"
               startId="Package\ETL Commandes\UPSERT Commandes.Outputs[insert]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output]"
-              endId="Package\ETL Commandes\Lookup warehouse.Inputs[Lookup Input]"
+              refId="Package\ETL Commandes.Paths[Lookup Match Output5]"
+              endId="Package\ETL Commandes\Tri STG.Inputs[Sort Input]"
               name="Lookup Match Output"
-              startId="Package\ETL Commandes\Lockup client.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output1]"
-              endId="Package\ETL Commandes\Lookup devise.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\ETL Commandes\Lookup warehouse.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output2]"
-              endId="Package\ETL Commandes\Conversion shipping.Inputs[Data Conversion Input]"
-              name="Lookup Match Output"
-              startId="Package\ETL Commandes\Lookup devise.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output3]"
-              endId="Package\ETL Commandes\Lookup shipping_date.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\ETL Commandes\Lookup shipping.Outputs[Lookup Match Output]" />
+              startId="Package\ETL Commandes\Lookup shipping_prices.Outputs[Lookup Match Output]" />
             <path
               refId="Package\ETL Commandes.Paths[Lookup Match Output4]"
               endId="Package\ETL Commandes\Calcul delivery_date.Inputs[Derived Column Input]"
               name="Lookup Match Output"
               startId="Package\ETL Commandes\Lookup shipping_date.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output5]"
-              endId="Package\ETL Commandes\Tri STG.Inputs[Sort Input]"
+              refId="Package\ETL Commandes.Paths[Lookup Match Output3]"
+              endId="Package\ETL Commandes\Lookup shipping_date.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\ETL Commandes\Lookup shipping_prices.Outputs[Lookup Match Output]" />
+              startId="Package\ETL Commandes\Lookup shipping.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ETL Commandes.Paths[Lookup Match Output1]"
+              endId="Package\ETL Commandes\Lookup devise.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\ETL Commandes\Lookup warehouse.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ETL Commandes.Paths[Lookup Match Output]"
+              endId="Package\ETL Commandes\Lookup warehouse.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\ETL Commandes\Lockup client.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ETL Commandes.Paths[Lookup Match Output2]"
+              endId="Package\ETL Commandes\Conversion shipping.Inputs[Data Conversion Input]"
+              name="Lookup Match Output"
+              startId="Package\ETL Commandes\Lookup devise.Outputs[Lookup Match Output]" />
             <path
               refId="Package\ETL Commandes.Paths[Merge Join Output]"
               endId="Package\ETL Commandes\UPSERT Commandes.Inputs[Conditional Split Input]"
@@ -8495,14 +8483,14 @@ where [refTable].[code] = ?</property>
               startId="Package\ETL Commandes\DWH Commandes join.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\ETL Commandes.Paths[Sort Output1]"
-              endId="Package\ETL Commandes\Merge Join.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\ETL Commandes\Tri DWH.Outputs[Sort Output]" />
-            <path
-              refId="Package\ETL Commandes.Paths[Sort Output]"
               endId="Package\ETL Commandes\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\ETL Commandes\Tri STG.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL Commandes.Paths[Sort Output]"
+              endId="Package\ETL Commandes\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\ETL Commandes\Tri DWH.Outputs[Sort Output]" />
             <path
               refId="Package\ETL Commandes.Paths[update]"
               endId="Package\ETL Commandes\Test UPDATE.Inputs[Conditional Split Input]"
@@ -17414,7 +17402,7 @@ where [refTable].[code] = ?</property>
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="289,328"
-          Size="130,43"
+          Size="130,42.6666666666667"
           Id="e009bb5d-44e3-401c-9ec5-44e0b1123cc1"
           TopLeft="123.166662618518,694.599994955659">
           <GroupLayout.ChildrenIds>
@@ -17426,11 +17414,11 @@ where [refTable].[code] = ?</property>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
         <NodeLayout
-          Size="215,42"
+          Size="214.666666666667,42"
           Id="Package\TRUNCATE STG Commandes"
           TopLeft="51.5,5.5" />
         <NodeLayout
-          Size="235,42"
+          Size="234.666666666667,42"
           Id="Package\Chargement staging Commandes"
           TopLeft="5.5,73.5" />
         <NodeLayout
@@ -17498,7 +17486,7 @@ where [refTable].[code] = ?</property>
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="272,253"
+          PanelSize="272,253.333333333334"
           Size="272,296"
           Id="15f17838-d747-4368-89a8-386b4c0d88bc"
           TopLeft="492.5,515.5">
@@ -17600,7 +17588,7 @@ where [refTable].[code] = ?</property>
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="302,268"
-          Size="302,43"
+          Size="302,42.6666666666667"
           Id="fa7fb27e-2d24-45cc-9d30-b9e0b5fef724"
           TopLeft="142.5,255.5">
           <GroupLayout.ChildrenIds>
@@ -17701,7 +17689,7 @@ where [refTable].[code] = ?</property>
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="426,256"
-          Size="88,43"
+          Size="88,42.6666666666667"
           Id="72c783cf-3f39-4474-938e-1a7f5b88123c"
           TopLeft="57.5,371.5">
           <GroupLayout.ChildrenIds>
@@ -17802,7 +17790,7 @@ where [refTable].[code] = ?</property>
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="324,351"
-          Size="128,43"
+          Size="128,42.6666666666667"
           Id="25c7f326-56bf-41ba-8db7-f19698fc8b04"
           TopLeft="113.5,470.5">
           <GroupLayout.ChildrenIds>
@@ -17826,7 +17814,7 @@ where [refTable].[code] = ?</property>
           Id="Package\Chargement staging Commandes\STG Commandes"
           TopLeft="297,345" />
         <NodeLayout
-          Size="169,42"
+          Size="169.333333333334,42"
           Id="Package\Chargement staging Commandes\OLTP  Commandes"
           TopLeft="259,228" />
         <EdgeLayout
@@ -18633,27 +18621,19 @@ where [refTable].[code] = ?</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="178,42"
-          Id="Package\ETL Commandes\UPSERT Commandes"
-          TopLeft="493,1011" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\ETL Commandes\STG Commandes"
-          TopLeft="268,48" />
-        <NodeLayout
-          Size="182,42"
-          Id="Package\ETL Commandes\Lookup shipping_date"
-          TopLeft="274,580" />
-        <NodeLayout
-          Size="238,42"
-          Id="Package\ETL Commandes\Transformation delivery_date INT"
-          TopLeft="245,746" />
-        <NodeLayout
           Size="140,42"
           Id="Package\ETL Commandes\Lockup client"
           TopLeft="279,140" />
         <NodeLayout
-          Size="119,42"
+          Size="185.333333333334,42"
+          Id="Package\ETL Commandes\DWH Commandes join"
+          TopLeft="1132,48" />
+        <NodeLayout
+          Size="189.333333333334,42"
+          Id="Package\ETL Commandes\Lookup shipping_prices"
+          TopLeft="263,834" />
+        <NodeLayout
+          Size="118.666666666667,42"
           Id="Package\ETL Commandes\Tri DWH"
           TopLeft="1416,873" />
         <NodeLayout
@@ -18661,45 +18641,149 @@ where [refTable].[code] = ?</property>
           Id="Package\ETL Commandes\DWH Commandes"
           TopLeft="401,1141" />
         <NodeLayout
-          Size="185,42"
-          Id="Package\ETL Commandes\DWH Commandes join"
-          TopLeft="1132,48" />
-        <NodeLayout
-          Size="167,42"
-          Id="Package\ETL Commandes\Lookup warehouse"
-          TopLeft="266,235" />
-        <NodeLayout
           Size="146,42"
           Id="Package\ETL Commandes\Lookup devise"
           TopLeft="283,331" />
         <NodeLayout
-          Size="173,42"
+          Size="166.666666666667,42"
+          Id="Package\ETL Commandes\Lookup warehouse"
+          TopLeft="266,235" />
+        <NodeLayout
+          Size="141.333333333334,42"
+          Id="Package\ETL Commandes\Test UPDATE"
+          TopLeft="988,1040" />
+        <NodeLayout
+          Size="173.333333333334,42"
           Id="Package\ETL Commandes\Conversion shipping"
           TopLeft="275,414" />
         <NodeLayout
-          Size="114,42"
-          Id="Package\ETL Commandes\Tri STG"
-          TopLeft="680,916" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\ETL Commandes\Merge Join"
-          TopLeft="907,917" />
-        <NodeLayout
-          Size="206,42"
-          Id="Package\ETL Commandes\DWH UPDATE Commandes"
-          TopLeft="989,1124" />
+          Size="160,42"
+          Id="Package\ETL Commandes\STG Commandes"
+          TopLeft="268,48" />
         <NodeLayout
           Size="156,42"
           Id="Package\ETL Commandes\Lookup shipping"
           TopLeft="291,490" />
         <NodeLayout
-          Size="173,42"
+          Size="206,42"
+          Id="Package\ETL Commandes\DWH UPDATE Commandes"
+          TopLeft="989,1124" />
+        <NodeLayout
+          Size="114,42"
+          Id="Package\ETL Commandes\Tri STG"
+          TopLeft="680,916" />
+        <NodeLayout
+          Size="238,42"
+          Id="Package\ETL Commandes\Transformation delivery_date INT"
+          TopLeft="245,746" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\ETL Commandes\Merge Join"
+          TopLeft="907,917" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\ETL Commandes\Lookup shipping_date"
+          TopLeft="274,580" />
+        <NodeLayout
+          Size="173.333333333334,42"
           Id="Package\ETL Commandes\Calcul delivery_date"
           TopLeft="280,662" />
         <NodeLayout
-          Size="141,42"
-          Id="Package\ETL Commandes\Test UPDATE"
-          TopLeft="988,1040" />
+          Size="178,42"
+          Id="Package\ETL Commandes\UPSERT Commandes"
+          TopLeft="493,1011" />
+        <EdgeLayout
+          Id="Package\ETL Commandes.Paths[update]"
+          TopLeft="671,1032">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="317,29"
+              Start="0,0"
+              End="309.5,29">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="154.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="154.5,0"
+                    Point2="158.5,0"
+                    Point3="158.5,4" />
+                  <mssgle:LineSegment
+                    End="158.5,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="158.5,25"
+                    Point2="158.5,29"
+                    Point3="162.5,29" />
+                  <mssgle:LineSegment
+                    End="309.5,29" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="142.6975,-17.609375,31.605,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Commandes.Paths[Sort Output1]"
+          TopLeft="794,937.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="113,0"
+              Start="0,0"
+              End="105.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="105.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Commandes.Paths[Sort Output]"
+          TopLeft="1416,894">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-379,44"
+              Start="0,0"
+              End="-371.5,44">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-185.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-185.5,0"
+                    Point2="-189.5,0"
+                    Point3="-189.5,4" />
+                  <mssgle:LineSegment
+                    End="-189.5,40" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-189.5,40"
+                    Point2="-189.5,44"
+                    Point3="-193.5,44" />
+                  <mssgle:LineSegment
+                    End="-371.5,44" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL Commandes.Paths[OLE DB Source Output1]"
           TopLeft="1224.5,90">
@@ -18754,6 +18838,76 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Commandes.Paths[Merge Join Output]"
+          TopLeft="972,959">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-390,52"
+              Start="0,0"
+              End="-390,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="-4,26" />
+                  <mssgle:LineSegment
+                    End="-386,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-386,26"
+                    Point2="-390,26"
+                    Point3="-390,30" />
+                  <mssgle:LineSegment
+                    End="-390,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Commandes.Paths[Lookup Match Output5]"
+          TopLeft="357.5,876">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="379.5,40"
+              Start="0,0"
+              End="379.5,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16"
+                    Point2="0,20"
+                    Point3="4,20" />
+                  <mssgle:LineSegment
+                    End="375.5,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="375.5,20"
+                    Point2="379.5,20"
+                    Point3="379.5,24" />
+                  <mssgle:LineSegment
+                    End="379.5,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="141.55861328125,25,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18877,6 +19031,64 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\ETL Commandes.Paths[insert]"
+          TopLeft="582,1053">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-99,88"
+              Start="0,0"
+              End="-99,80.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40"
+                    Point2="0,44"
+                    Point3="-4,44" />
+                  <mssgle:LineSegment
+                    End="-95,44" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-95,44"
+                    Point2="-99,44"
+                    Point3="-99,48" />
+                  <mssgle:LineSegment
+                    End="-99,80.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-62.44998046875,49,25.8999609375,9.451171875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Commandes.Paths[Derived Column Output1]"
+          TopLeft="360.75,788">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\ETL Commandes.Paths[Derived Column Output]"
           TopLeft="365.25,704">
           <EdgeLayout.Curve>
@@ -18956,248 +19168,11 @@ where [refTable].[code] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="189,42"
-          Id="Package\ETL Commandes\Lookup shipping_prices"
-          TopLeft="263,834" />
-        <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Derived Column Output1]"
-          TopLeft="360.75,788">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46"
-              Start="0,0"
-              End="0,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Match Output5]"
-          TopLeft="357.5,876">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="379.5,40"
-              Start="0,0"
-              End="379.5,32.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16"
-                    Point2="0,20"
-                    Point3="4,20" />
-                  <mssgle:LineSegment
-                    End="375.5,20" />
-                  <mssgle:CubicBezierSegment
-                    Point1="375.5,20"
-                    Point2="379.5,20"
-                    Point3="379.5,24" />
-                  <mssgle:LineSegment
-                    End="379.5,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="141.55861328125,25,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Sort Output]"
-          TopLeft="794,937.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="113,0"
-              Start="0,0"
-              End="105.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="105.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Sort Output1]"
-          TopLeft="1416,894">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-379,44"
-              Start="0,0"
-              End="-371.5,44">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-185.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-185.5,0"
-                    Point2="-189.5,0"
-                    Point3="-189.5,4" />
-                  <mssgle:LineSegment
-                    End="-189.5,40" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-189.5,40"
-                    Point2="-189.5,44"
-                    Point3="-193.5,44" />
-                  <mssgle:LineSegment
-                    End="-371.5,44" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Merge Join Output]"
-          TopLeft="972,959">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-390,52"
-              Start="0,0"
-              End="-390,44.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22"
-                    Point2="0,26"
-                    Point3="-4,26" />
-                  <mssgle:LineSegment
-                    End="-386,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-386,26"
-                    Point2="-390,26"
-                    Point3="-390,30" />
-                  <mssgle:LineSegment
-                    End="-390,44.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Commandes.Paths[insert]"
-          TopLeft="582,1053">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-99,88"
-              Start="0,0"
-              End="-99,80.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,40"
-                    Point2="0,44"
-                    Point3="-4,44" />
-                  <mssgle:LineSegment
-                    End="-95,44" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-95,44"
-                    Point2="-99,44"
-                    Point3="-99,48" />
-                  <mssgle:LineSegment
-                    End="-99,80.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-62.44998046875,49,25.8999609375,9.451171875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Commandes.Paths[update]"
-          TopLeft="671,1032">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="317,29"
-              Start="0,0"
-              End="309.5,29">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="154.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="154.5,0"
-                    Point2="158.5,0"
-                    Point3="158.5,4" />
-                  <mssgle:LineSegment
-                    End="158.5,25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="158.5,25"
-                    Point2="158.5,29"
-                    Point3="162.5,29" />
-                  <mssgle:LineSegment
-                    End="309.5,29" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="133.885,-22,49.23,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\STG Commandes">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\Lookup shipping_date">
+    design-time-name="Package\ETL Commandes\Lockup client">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -19207,7 +19182,7 @@ where [refTable].[code] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DimTemps]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -19220,22 +19195,35 @@ where [refTable].[code] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\Lockup client">
+    design-time-name="Package\ETL Commandes\DWH Commandes join">
     <Properties>
       <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
+        <Name>DataSourceViewID</Name>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Commandes\Lookup shipping_prices">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">true</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimShippingPrices]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -19256,15 +19244,25 @@ where [refTable].[code] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\DWH Commandes join">
+    design-time-name="Package\ETL Commandes\Lookup devise">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimDevises]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -19292,25 +19290,15 @@ where [refTable].[code] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\Lookup devise">
+    design-time-name="Package\ETL Commandes\STG Commandes">
     <Properties>
       <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimDevises]</Value>
+        <Name>DataSourceViewID</Name>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -19326,6 +19314,29 @@ where [refTable].[code] = ?</property>
         <Name>UsedTableName</Name>
         <Value
           type="q3:string">[dbo].[DimShipping]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Commandes\Lookup shipping_date">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimTemps]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -20834,29 +20845,6 @@ where [refTable].[code] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\Lookup shipping_prices">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">true</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimShippingPrices]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
