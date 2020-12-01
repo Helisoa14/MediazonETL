@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="56"
-  DTS:VersionGUID="{AB1CBDD7-6B62-4A9C-B397-3740291069F3}">
+  DTS:VersionBuild="58"
+  DTS:VersionGUID="{8840F74F-3662-414C-B64B-ABCDF7C3EA1E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -671,7 +671,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[OLTPCommandesFullRefresh]</property>
+                  name="OpenRowset">[dbo].[OLTPCommandes]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1169,7 +1169,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[OLTPVentesFullRefresh]</property>
+                  name="OpenRowset">[dbo].[OLTPVentes]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -10554,47 +10554,47 @@ where [refTable].[code] = ?</property>
               name="insert"
               startId="Package\ETL Commandes\UPSERT Commandes.Outputs[insert]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Error Output1]"
+              refId="Package\ETL Commandes.Paths[Lookup Error Output]"
               endId="Package\ETL Commandes\Flat File Destination.Inputs[Flat File Destination Input]"
               name="Lookup Error Output"
               startId="Package\ETL Commandes\Lookup shipping_prices.Outputs[Lookup Error Output]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Error Output]"
+              refId="Package\ETL Commandes.Paths[Lookup Error Output1]"
               endId="Package\ETL Commandes\Colonne Exchange.Inputs[Derived Column Input]"
               name="Lookup Error Output"
               startId="Package\ETL Commandes\Lookup exchange_rate.Outputs[Lookup Error Output]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output]"
+              refId="Package\ETL Commandes.Paths[Lookup Match Output6]"
               endId="Package\ETL Commandes\Lookup warehouse.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\ETL Commandes\Lockup client.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output6]"
+              refId="Package\ETL Commandes.Paths[Lookup Match Output5]"
               endId="Package\ETL Commandes\Conversion currency_code.Inputs[Data Conversion Input]"
               name="Lookup Match Output"
               startId="Package\ETL Commandes\Lookup shipping_prices.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output5]"
+              refId="Package\ETL Commandes.Paths[Lookup Match Output4]"
               endId="Package\ETL Commandes\Calcul delivery_date.Inputs[Derived Column Input]"
               name="Lookup Match Output"
               startId="Package\ETL Commandes\Lookup shipping_date.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output4]"
+              refId="Package\ETL Commandes.Paths[Lookup Match Output3]"
               endId="Package\ETL Commandes\Lookup shipping_date.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\ETL Commandes\Lookup shipping.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output3]"
+              refId="Package\ETL Commandes.Paths[Lookup Match Output2]"
               endId="Package\ETL Commandes\Lookup devise.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\ETL Commandes\Lookup warehouse.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output2]"
+              refId="Package\ETL Commandes.Paths[Lookup Match Output1]"
               endId="Package\ETL Commandes\Conversion shipping.Inputs[Data Conversion Input]"
               name="Lookup Match Output"
               startId="Package\ETL Commandes\Lookup devise.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\ETL Commandes.Paths[Lookup Match Output1]"
+              refId="Package\ETL Commandes.Paths[Lookup Match Output]"
               endId="Package\ETL Commandes\Union All.Inputs[Union All Input 1]"
               name="Lookup Match Output"
               startId="Package\ETL Commandes\Lookup exchange_rate.Outputs[Lookup Match Output]" />
@@ -20377,29 +20377,29 @@ where [refTable].[code] = ?</property>
               startId="Package\ETL Ventes\Lookup exhange_rate.Outputs[Lookup Error Output]" />
             <path
               refId="Package\ETL Ventes.Paths[Lookup Match Output4]"
-              endId="Package\ETL Ventes\Lookup warehouse.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\ETL Ventes\Lookup client.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\ETL Ventes.Paths[Lookup Match Output2]"
               endId="Package\ETL Ventes\Lookup produit.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\ETL Ventes\Lookup devise.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\ETL Ventes.Paths[Lookup Match Output3]"
-              endId="Package\ETL Ventes\Lookup devise.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\ETL Ventes\Lookup warehouse.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\ETL Ventes.Paths[Lookup Match Output]"
+              refId="Package\ETL Ventes.Paths[Lookup Match Output2]"
               endId="Package\ETL Ventes\Union All.Inputs[Union All Input 1]"
               name="Lookup Match Output"
               startId="Package\ETL Ventes\Lookup exhange_rate.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\ETL Ventes.Paths[Lookup Match Output1]"
+              refId="Package\ETL Ventes.Paths[Lookup Match Output3]"
+              endId="Package\ETL Ventes\Lookup warehouse.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\ETL Ventes\Lookup client.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ETL Ventes.Paths[Lookup Match Output]"
               endId="Package\ETL Ventes\Conversion Currency.Inputs[Data Conversion Input]"
               name="Lookup Match Output"
               startId="Package\ETL Ventes\Lookup produit.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ETL Ventes.Paths[Lookup Match Output1]"
+              endId="Package\ETL Ventes\Lookup devise.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\ETL Ventes\Lookup warehouse.Outputs[Lookup Match Output]" />
             <path
               refId="Package\ETL Ventes.Paths[Merge Join Output]"
               endId="Package\ETL Ventes\UPSERT Ventes.Inputs[Conditional Split Input]"
@@ -21301,7 +21301,7 @@ where [refTable].[code] = ?</property>
     design-time-name="Package\Chargement staging Commandes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Chargement staging Commandes\STG Commandes"
@@ -21341,9 +21341,7 @@ where [refTable].[code] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21379,7 +21377,7 @@ where [refTable].[code] = ?</property>
     design-time-name="Package\Chargement staging Ventes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138.666666666667,42"
           Id="Package\Chargement staging Ventes\OLTP Ventes"
@@ -21419,9 +21417,7 @@ where [refTable].[code] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22486,7 +22482,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Match Output6]"
+          Id="Package\ETL Commandes.Paths[Lookup Match Output5]"
           TopLeft="387.888888888889,834">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22522,7 +22518,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Match Output5]"
+          Id="Package\ETL Commandes.Paths[Lookup Match Output4]"
           TopLeft="364.880952380952,622">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22546,7 +22542,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Match Output4]"
+          Id="Package\ETL Commandes.Paths[Lookup Match Output3]"
           TopLeft="367,532">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22570,7 +22566,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Match Output3]"
+          Id="Package\ETL Commandes.Paths[Lookup Match Output2]"
           TopLeft="352.75,277">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22594,7 +22590,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Match Output2]"
+          Id="Package\ETL Commandes.Paths[Lookup Match Output1]"
           TopLeft="358.75,373">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22618,7 +22614,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Match Output1]"
+          Id="Package\ETL Commandes.Paths[Lookup Match Output]"
           TopLeft="825.714285714286,460.761904761905">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22654,7 +22650,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Match Output]"
+          Id="Package\ETL Commandes.Paths[Lookup Match Output6]"
           TopLeft="349.25,182">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22678,7 +22674,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Error Output]"
+          Id="Package\ETL Commandes.Paths[Lookup Error Output1]"
           TopLeft="919.047619047619,439.428571428571">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22910,7 +22906,7 @@ where [refTable].[code] = ?</property>
           Id="Package\ETL Commandes\Flat File Destination"
           TopLeft="441.666660085321,958.777769176828" />
         <EdgeLayout
-          Id="Package\ETL Commandes.Paths[Lookup Error Output1]"
+          Id="Package\ETL Commandes.Paths[Lookup Error Output]"
           TopLeft="357.666666666667,876">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22949,52 +22945,6 @@ where [refTable].[code] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\Lockup client">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\Lookup shipping_date">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimTemps]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\ETL Commandes\Lookup devise">
     <Properties>
       <Property>
@@ -23014,19 +22964,6 @@ where [refTable].[code] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\DWH Commandes join">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -23054,7 +22991,7 @@ where [refTable].[code] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\DWH Commandes">
+    design-time-name="Package\ETL Commandes\STG Commandes">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -23067,7 +23004,7 @@ where [refTable].[code] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL Commandes\STG Commandes">
+    design-time-name="Package\ETL Commandes\DWH Commandes join">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -23126,6 +23063,19 @@ where [refTable].[code] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\ETL Commandes\DWH Commandes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\ETL Commandes\Lookup shipping">
     <Properties>
       <Property>
@@ -23137,6 +23087,52 @@ where [refTable].[code] = ?</property>
         <Name>UsedTableName</Name>
         <Value
           type="q3:string">[dbo].[DimShipping]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Commandes\Lockup client">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Commandes\Lookup shipping_date">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimTemps]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -24235,7 +24231,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Ventes.Paths[Lookup Match Output]"
+          Id="Package\ETL Ventes.Paths[Lookup Match Output2]"
           TopLeft="698,170">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24271,7 +24267,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Ventes.Paths[Lookup Match Output2]"
+          Id="Package\ETL Ventes.Paths[Lookup Match Output4]"
           TopLeft="277,323">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24307,7 +24303,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Ventes.Paths[Lookup Match Output1]"
+          Id="Package\ETL Ventes.Paths[Lookup Match Output]"
           TopLeft="310.666666666667,381">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24343,7 +24339,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Ventes.Paths[Lookup Match Output4]"
+          Id="Package\ETL Ventes.Paths[Lookup Match Output3]"
           TopLeft="266.5,157">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24379,7 +24375,7 @@ where [refTable].[code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Ventes.Paths[Lookup Match Output3]"
+          Id="Package\ETL Ventes.Paths[Lookup Match Output1]"
           TopLeft="286.5,238">
           <EdgeLayout.Curve>
             <mssgle:Curve
