@@ -1,0 +1,2946 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/4/2020 7:30:57 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="WSERVER2019"
+  DTS:CreatorName="WSERVER2019\enginesadmin"
+  DTS:DTSID="{6A8CCA87-883E-468F-8A71-A6CA956B4506}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{E65E782D-5DE6-42E6-A41D-03EEAE9C76E9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Build complet du cube"
+      DTS:CreationName="Microsoft.DTSProcessingTask"
+      DTS:Description="Analysis Services Processing Task"
+      DTS:DTSID="{9b1d07d4-ddcb-4ce9-8442-2396a187c7fa}"
+      DTS:ExecutableType="Microsoft.DTSProcessingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Build complet du cube"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASProcessingData
+          ConnectionName="localhost.Mediazon2020"
+          ProcessingCommands="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;Mediazon2020&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Shipping&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;Mediazon2020&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Entrepots&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;Mediazon2020&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Clients&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;&lt;/Batch&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ETL Entrepot"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{d519e32a-9384-4e61-ac16-031dc74197b6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ETL Entrepot"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ETL Entrepot\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input].Columns[Code]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="Code"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[Code]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input].Columns[npa]"
+                      cachedDataType="numeric"
+                      cachedName="npa"
+                      cachedPrecision="38"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[npa]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input].Columns[lieu]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="lieu"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[lieu]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="Name"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input].Columns[tel]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="tel"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[tel]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input].Columns[partner]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="partner"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[partner]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[code_char]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[code_char]"
+                      name="code_char"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[Code]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[npa_char]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[npa_char]"
+                      name="npa_char"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[npa]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[lieu_string]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[lieu_string]"
+                      name="lieu_string"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[lieu]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[name_string]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[name_string]"
+                      name="name_string"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[Name]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[tel_string]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[tel_string]"
+                      name="tel_string"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[tel]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[partner_mdm]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[partner_mdm]"
+                      name="partner_mdm"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[partner]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL Entrepot\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Derived Column.Inputs[Derived Column Input].Columns[code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="code"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[code]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\ETL Entrepot\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Output].Columns[code_DWH]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Output].Columns[code_DWH]"
+                      name="code_DWH"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,10,1252)[TRIM](#{Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[code]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,10,1252)TRIM(code)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\ETL Entrepot\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\dimEntrepot DWH"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="dimEntrepot DWH"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DimEntrepots]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Entrepot\dimEntrepot DWH.Connections[OleDbConnection]"
+                  connectionManagerID="{4F2FAB48-DD65-4624-9275-753D0E5322E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[WServer2019.MediazonDWH]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[code]"
+                      length="10"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[code]"
+                      name="code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[name]"
+                      length="25"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[geography_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[geography_id]"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[geography_id]"
+                      name="geography_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[docks]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[docks]"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[docks]"
+                      name="docks"
+                      precision="38"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[tel]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[tel]"
+                      length="50"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[tel]"
+                      name="tel"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[partner_name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[partner_name]"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[partner_name]"
+                      name="partner_name"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="code" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[geography_id]"
+                      dataType="i4"
+                      name="geography_id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[docks]"
+                      dataType="numeric"
+                      name="docks"
+                      precision="38" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[tel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="tel" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].ExternalColumns[partner_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="partner_name" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[id]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[code]"
+                      name="code" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[geography_id]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[geography_id]"
+                      name="geography_id" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[docks]"
+                      dataType="numeric"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[docks]"
+                      name="docks"
+                      precision="38" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[tel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[tel]"
+                      name="tel" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[partner_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[partner_name]"
+                      name="partner_name" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\Entrepot MDM"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Entrepot MDM"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[mdm].[Entrepôts]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Entrepot\Entrepot MDM.Connections[OleDbConnection]"
+                  connectionManagerID="{5601A1D4-3CA7-447E-A642-BE9D33A5E238}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.MData]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[ID]"
+                      name="ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[Code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[Code]"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[Code]"
+                      name="Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[npa]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[npa]"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[npa]"
+                      name="npa"
+                      precision="38"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[lieu]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[lieu]"
+                      length="100"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[lieu]"
+                      name="lieu"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[tel]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[tel]"
+                      length="100"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[tel]"
+                      name="tel"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[docks]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[docks]"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[docks]"
+                      name="docks"
+                      precision="38"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[partner_Code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[partner_Code]"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[partner_Code]"
+                      name="partner_Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[partner]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[partner_Name]"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[partner]"
+                      name="partner"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[MUID]"
+                      dataType="guid"
+                      name="MUID" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[VersionName]"
+                      dataType="wstr"
+                      length="50"
+                      name="VersionName" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[VersionNumber]"
+                      dataType="i4"
+                      name="VersionNumber" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[Version_ID]"
+                      dataType="i4"
+                      name="Version_ID" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[VersionFlag]"
+                      dataType="wstr"
+                      length="50"
+                      name="VersionFlag" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="250"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[Code]"
+                      dataType="wstr"
+                      length="250"
+                      name="Code" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[ChangeTrackingMask]"
+                      dataType="i4"
+                      name="ChangeTrackingMask" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[npa]"
+                      dataType="numeric"
+                      name="npa"
+                      precision="38" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[lieu]"
+                      dataType="wstr"
+                      length="100"
+                      name="lieu" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[tel]"
+                      dataType="wstr"
+                      length="100"
+                      name="tel" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[docks]"
+                      dataType="numeric"
+                      name="docks"
+                      precision="38" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[partner_Code]"
+                      dataType="wstr"
+                      length="250"
+                      name="partner_Code" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[partner_Name]"
+                      dataType="wstr"
+                      length="250"
+                      name="partner_Name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[partner_ID]"
+                      dataType="i4"
+                      name="partner_ID" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[EnterDateTime]"
+                      dataType="dbTimeStamp2"
+                      name="EnterDateTime"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[EnterUserName]"
+                      dataType="wstr"
+                      length="100"
+                      name="EnterUserName" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[EnterVersionNumber]"
+                      dataType="i4"
+                      name="EnterVersionNumber" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[LastChgDateTime]"
+                      dataType="dbTimeStamp2"
+                      name="LastChgDateTime"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[LastChgUserName]"
+                      dataType="wstr"
+                      length="100"
+                      name="LastChgUserName" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[LastChgVersionNumber]"
+                      dataType="i4"
+                      name="LastChgVersionNumber" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].ExternalColumns[ValidationStatus]"
+                      dataType="wstr"
+                      length="250"
+                      name="ValidationStatus" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[ID]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[ID]"
+                      name="ID" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[Code]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[Code]"
+                      name="Code" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[npa]"
+                      dataType="numeric"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[npa]"
+                      name="npa"
+                      precision="38" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[lieu]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[lieu]"
+                      name="lieu" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[tel]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[tel]"
+                      name="tel" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[docks]"
+                      dataType="numeric"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[docks]"
+                      name="docks"
+                      precision="38" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[partner_Code]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[partner_Code]"
+                      name="partner_Code" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[partner_Name]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Error Output].Columns[partner_Name]"
+                      name="partner_Name" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\INSERT dimEntrepot DWH"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="INSERT dimEntrepot DWH"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DimEntrepots]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Connections[OleDbConnection]"
+                  connectionManagerID="{4F2FAB48-DD65-4624-9275-753D0E5322E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[WServer2019.MediazonDWH]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].Columns[docks]"
+                      cachedDataType="numeric"
+                      cachedName="docks"
+                      cachedPrecision="38"
+                      externalMetadataColumnId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[docks]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[docks]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].Columns[geography_id]"
+                      cachedDataType="i4"
+                      cachedName="geography_id"
+                      externalMetadataColumnId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[geography_id]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[geography_id]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].Columns[code_char]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="code_char"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[code]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_char]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].Columns[name_string]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="name_string"
+                      externalMetadataColumnId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[name_string]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].Columns[tel_string]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="tel_string"
+                      externalMetadataColumnId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[tel]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[tel_string]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].Columns[partner_mdm]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="partner_mdm"
+                      externalMetadataColumnId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[partner_name]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[partner_mdm]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="code" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[geography_id]"
+                      dataType="i4"
+                      name="geography_id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[docks]"
+                      dataType="numeric"
+                      name="docks"
+                      precision="38" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[tel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="tel" />
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input].ExternalColumns[partner_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="partner_name" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\Lookup geography"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup geography"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[DimGeographie]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[DimGeographie]) [refTable]
+where [refTable].[zip] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="zip" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="city" dataType="DT_STR" length="250" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="state" dataType="DT_TEXT" length="0" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="country" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[npa_char]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Entrepot\Lookup geography.Connections[OleDbConnection]"
+                  connectionManagerID="{4F2FAB48-DD65-4624-9275-753D0E5322E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[WServer2019.MediazonDWH]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL Entrepot\Lookup geography.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Lookup geography.Inputs[Lookup Input].Columns[npa_char]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="npa_char"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[npa_char]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">zip</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\ETL Entrepot\Lookup geography.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Match Output].Columns[geography_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Match Output].Columns[geography_id]"
+                      name="geography_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">id</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\ETL Entrepot\Lookup geography.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\ETL Entrepot\Lookup geography.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\Merge Join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[code_char]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="code_char"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[code_char]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[docks]"
+                      cachedDataType="numeric"
+                      cachedName="docks"
+                      cachedPrecision="38"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[docks]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[geography_id]"
+                      cachedDataType="i4"
+                      cachedName="geography_id"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[geography_id]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[name_string]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="name_string"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[name_string]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[tel_string]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="tel_string"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[tel_string]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[partner_mdm]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="partner_mdm"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[partner_mdm]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[code_DWH]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="code_DWH"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[code_DWH]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="name"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[name]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[geography_id]"
+                      cachedDataType="i4"
+                      cachedName="geography_id"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[geography_id]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[docks]"
+                      cachedDataType="numeric"
+                      cachedName="docks"
+                      cachedPrecision="38"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[docks]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[tel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="tel"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[tel]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[partner_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="partner_name"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[partner_name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[docks]"
+                      dataType="numeric"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[docks]"
+                      name="docks"
+                      precision="38">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[docks]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_char]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_char]"
+                      name="code_char"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[code_char]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[geography_id]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[geography_id]"
+                      name="geography_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[geography_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[name_string]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[name_string]"
+                      name="name_string">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[name_string]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[tel_string]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[tel_string]"
+                      name="tel_string">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[tel_string]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[partner_mdm]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[partner_mdm]"
+                      name="partner_mdm">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input].Columns[partner_mdm]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[id]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[id]"
+                      name="id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[name]"
+                      name="name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[geography_id (1)]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[geography_id (1)]"
+                      name="geography_id (1)">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[geography_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[docks (1)]"
+                      dataType="numeric"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[docks (1)]"
+                      name="docks (1)"
+                      precision="38">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[docks]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[tel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[tel]"
+                      name="tel">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[tel]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[partner_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[partner_name]"
+                      name="partner_name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[partner_name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_DWH]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_DWH]"
+                      name="code_DWH">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input].Columns[code_DWH]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\TRI dimEntrepot DWH"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="TRI dimEntrepot DWH"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Inputs[Sort Input].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Inputs[Sort Input].Columns[name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="name"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Inputs[Sort Input].Columns[geography_id]"
+                      cachedDataType="i4"
+                      cachedName="geography_id"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[geography_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Inputs[Sort Input].Columns[docks]"
+                      cachedDataType="numeric"
+                      cachedName="docks"
+                      cachedPrecision="38"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[docks]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Inputs[Sort Input].Columns[tel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="tel"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[tel]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Inputs[Sort Input].Columns[partner_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="partner_name"
+                      lineageId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[partner_name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Inputs[Sort Input].Columns[code_DWH]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="code_DWH"
+                      lineageId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Output].Columns[code_DWH]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[id]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[id]"
+                      name="id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[name]"
+                      name="name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[geography_id]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[geography_id]"
+                      name="geography_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[geography_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[docks]"
+                      dataType="numeric"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[docks]"
+                      name="docks"
+                      precision="38">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[docks]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[tel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[tel]"
+                      name="tel">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[tel]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[partner_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[partner_name]"
+                      name="partner_name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output].Columns[partner_name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[code_DWH]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output].Columns[code_DWH]"
+                      name="code_DWH"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\Derived Column.Outputs[Derived Column Output].Columns[code_DWH]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\TRI entrepot MDM"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="TRI entrepot MDM"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\ETL Entrepot\TRI entrepot MDM.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Inputs[Sort Input].Columns[docks]"
+                      cachedDataType="numeric"
+                      cachedName="docks"
+                      cachedPrecision="38"
+                      lineageId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[docks]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Inputs[Sort Input].Columns[code_char]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="code_char"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[code_char]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Inputs[Sort Input].Columns[geography_id]"
+                      cachedDataType="i4"
+                      cachedName="geography_id"
+                      lineageId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Match Output].Columns[geography_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Inputs[Sort Input].Columns[name_string]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="name_string"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[name_string]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Inputs[Sort Input].Columns[tel_string]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="tel_string"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[tel_string]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Inputs[Sort Input].Columns[partner_mdm]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="partner_mdm"
+                      lineageId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[partner_mdm]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[docks]"
+                      dataType="numeric"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[docks]"
+                      name="docks"
+                      precision="38">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output].Columns[docks]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[code_char]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[code_char]"
+                      name="code_char"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[code_char]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[geography_id]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[geography_id]"
+                      name="geography_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\Lookup geography.Outputs[Lookup Match Output].Columns[geography_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[name_string]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[name_string]"
+                      name="name_string">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[name_string]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[tel_string]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[tel_string]"
+                      name="tel_string">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[tel_string]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[partner_mdm]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output].Columns[partner_mdm]"
+                      name="partner_mdm">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output].Columns[partner_mdm]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="UPDATE dimEntrepot DWH"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [DimEntrepots] SET
+[name] = ?,
+[geography_id] = ?,
+[docks] = ?,
+[tel] = ?,
+[partner_name] = ?
+WHERE [id]= ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Connections[OleDbConnection]"
+                  connectionManagerID="{4F2FAB48-DD65-4624-9275-753D0E5322E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[WServer2019.MediazonDWH]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].Columns[geography_id]"
+                      cachedDataType="i4"
+                      cachedName="geography_id"
+                      externalMetadataColumnId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[geography_id]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].Columns[docks]"
+                      cachedDataType="numeric"
+                      cachedName="docks"
+                      cachedPrecision="38"
+                      externalMetadataColumnId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[docks]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].Columns[tel_string]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="tel_string"
+                      externalMetadataColumnId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[tel_string]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].Columns[name_string]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="name_string"
+                      externalMetadataColumnId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[name_string]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].Columns[partner_mdm]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="partner_mdm"
+                      externalMetadataColumnId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[partner_mdm]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      dataType="numeric"
+                      name="Param_2"
+                      precision="38">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Param_3">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="Param_4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      dataType="i4"
+                      name="Param_5">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL Entrepot\UPSERT"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="UPSERT"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL Entrepot\UPSERT.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL Entrepot\UPSERT.Inputs[Conditional Split Input].Columns[code_char]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="code_char"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_char]" />
+                    <inputColumn
+                      refId="Package\ETL Entrepot\UPSERT.Inputs[Conditional Split Input].Columns[code_DWH]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="code_DWH"
+                      lineageId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_DWH]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL Entrepot\UPSERT.Outputs[insert]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="insert"
+                  synchronousInputId="Package\ETL Entrepot\UPSERT.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">![ISNULL](#{Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_char]}) &amp;&amp; [ISNULL](#{Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_DWH]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">!ISNULL(code_char) &amp;&amp; ISNULL(code_DWH)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\UPSERT.Outputs[update]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="update"
+                  synchronousInputId="Package\ETL Entrepot\UPSERT.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">![ISNULL](#{Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_char]}) &amp;&amp; ![ISNULL](#{Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output].Columns[code_DWH]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">!ISNULL(code_char) &amp;&amp; !ISNULL(code_DWH)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\UPSERT.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\ETL Entrepot\UPSERT.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL Entrepot\UPSERT.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\ETL Entrepot\UPSERT.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL Entrepot\UPSERT.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\UPSERT.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL Entrepot\UPSERT.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL Entrepot\UPSERT.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ETL Entrepot.Paths[Data Conversion Output]"
+              endId="Package\ETL Entrepot\Lookup geography.Inputs[Lookup Input]"
+              name="Data Conversion Output"
+              startId="Package\ETL Entrepot\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\ETL Entrepot.Paths[Derived Column Output]"
+              endId="Package\ETL Entrepot\TRI dimEntrepot DWH.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\ETL Entrepot\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\ETL Entrepot.Paths[insert]"
+              endId="Package\ETL Entrepot\INSERT dimEntrepot DWH.Inputs[OLE DB Destination Input]"
+              name="insert"
+              startId="Package\ETL Entrepot\UPSERT.Outputs[insert]" />
+            <path
+              refId="Package\ETL Entrepot.Paths[Lookup Match Output]"
+              endId="Package\ETL Entrepot\TRI entrepot MDM.Inputs[Sort Input]"
+              name="Lookup Match Output"
+              startId="Package\ETL Entrepot\Lookup geography.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ETL Entrepot.Paths[Merge Join Output]"
+              endId="Package\ETL Entrepot\UPSERT.Inputs[Conditional Split Input]"
+              name="Merge Join Output"
+              startId="Package\ETL Entrepot\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\ETL Entrepot.Paths[OLE DB Source Output]"
+              endId="Package\ETL Entrepot\Data Conversion.Inputs[Data Conversion Input]"
+              name="OLE DB Source Output"
+              startId="Package\ETL Entrepot\Entrepot MDM.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\ETL Entrepot.Paths[OLE DB Source Output1]"
+              endId="Package\ETL Entrepot\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\ETL Entrepot\dimEntrepot DWH.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\ETL Entrepot.Paths[Sort Output]"
+              endId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\ETL Entrepot\TRI entrepot MDM.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL Entrepot.Paths[Sort Output1]"
+              endId="Package\ETL Entrepot\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\ETL Entrepot\TRI dimEntrepot DWH.Outputs[Sort Output]" />
+            <path
+              refId="Package\ETL Entrepot.Paths[update]"
+              endId="Package\ETL Entrepot\UPDATE dimEntrepot DWH.Inputs[OLE DB Command Input]"
+              name="update"
+              startId="Package\ETL Entrepot\UPSERT.Outputs[update]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{23EEC94D-D02A-4D3B-80C7-952E6A3B52D3}"
+      DTS:From="Package\ETL Entrepot"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Build complet du cube" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="141,43"
+          Id="Package\ETL Entrepot"
+          TopLeft="169,181" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Build complet du cube"
+          TopLeft="169,284" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="239.5,224">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="21,60"
+              Start="0,0"
+              End="21,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="17,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17,30"
+                    Point2="21,30"
+                    Point3="21,34" />
+                  <mssgle:LineSegment
+                    End="21,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\ETL Entrepot">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="166,42"
+          Id="Package\ETL Entrepot\TRI entrepot MDM"
+          TopLeft="198.333333333334,453" />
+        <NodeLayout
+          Size="164,43"
+          Id="Package\ETL Entrepot\dimEntrepot DWH"
+          TopLeft="722,199" />
+        <NodeLayout
+          Size="117,42"
+          Id="Package\ETL Entrepot\UPSERT"
+          TopLeft="518.666666666667,590" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\ETL Entrepot\TRI dimEntrepot DWH"
+          TopLeft="650.666666666667,393.333333333334" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\ETL Entrepot\Derived Column"
+          TopLeft="774,316" />
+        <NodeLayout
+          Size="204,43"
+          Id="Package\ETL Entrepot\INSERT dimEntrepot DWH"
+          TopLeft="370,706.666666666667" />
+        <NodeLayout
+          Size="206,42"
+          Id="Package\ETL Entrepot\UPDATE dimEntrepot DWH"
+          TopLeft="792,706" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\ETL Entrepot\Lookup geography"
+          TopLeft="115,326" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\ETL Entrepot\Data Conversion"
+          TopLeft="102,235" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\ETL Entrepot\Merge Join"
+          TopLeft="576,498" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\ETL Entrepot\Entrepot MDM"
+          TopLeft="125.333333333333,72" />
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[Merge Join Output]"
+          TopLeft="641,540">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-63.833333333333,50"
+              Start="0,0"
+              End="-63.833333333333,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21"
+                    Point2="0,25"
+                    Point3="-4,25" />
+                  <mssgle:LineSegment
+                    End="-59.833333333333,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-59.833333333333,25"
+                    Point2="-63.833333333333,25"
+                    Point3="-63.833333333333,29" />
+                  <mssgle:LineSegment
+                    End="-63.833333333333,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[Sort Output1]"
+          TopLeft="743.166666666667,435.333333333334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-102.166666666667,62.666666666666"
+              Start="0,0"
+              End="-102.166666666667,55.166666666666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.333333333333"
+                    Point2="0,31.333333333333"
+                    Point3="-4,31.333333333333" />
+                  <mssgle:LineSegment
+                    End="-98.166666666667,31.333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-98.166666666667,31.333333333333"
+                    Point2="-102.166666666667,31.333333333333"
+                    Point3="-102.166666666667,35.333333333333" />
+                  <mssgle:LineSegment
+                    End="-102.166666666667,55.166666666666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[Lookup Match Output]"
+          TopLeft="198,368">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83.3333333333341,85"
+              Start="0,0"
+              End="83.3333333333341,77.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.5"
+                    Point2="0,42.5"
+                    Point3="4,42.5" />
+                  <mssgle:LineSegment
+                    End="79.3333333333341,42.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.3333333333341,42.5"
+                    Point2="83.3333333333341,42.5"
+                    Point3="83.3333333333341,46.5" />
+                  <mssgle:LineSegment
+                    End="83.3333333333341,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-6.52472005208296,47.5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[OLE DB Source Output1]"
+          TopLeft="804,242">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="47,74"
+              Start="0,0"
+              End="47,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="4,37" />
+                  <mssgle:LineSegment
+                    End="43,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="43,37"
+                    Point2="47,37"
+                    Point3="47,41" />
+                  <mssgle:LineSegment
+                    End="47,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[insert]"
+          TopLeft="559,632">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-87.0000000000003,74.666666666667"
+              Start="0,0"
+              End="-87.0000000000003,67.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.4710511523329" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.4710511523329"
+                    Point2="0,30.4710511523329"
+                    Point3="-4,30.4710511523329" />
+                  <mssgle:LineSegment
+                    End="-83.0000000000003,30.4710511523329" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-83.0000000000003,30.4710511523329"
+                    Point2="-87.0000000000003,30.4710511523329"
+                    Point3="-87.0000000000003,34.4710511523329" />
+                  <mssgle:LineSegment
+                    End="-87.0000000000003,67.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-65.2600390625002,35.4710511523329,25.8999609375,9.451171875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[Data Conversion Output]"
+          TopLeft="180,277">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18,49"
+              Start="0,0"
+              End="18,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="4,24.5" />
+                  <mssgle:LineSegment
+                    End="14,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14,24.5"
+                    Point2="18,24.5"
+                    Point3="18,28.5" />
+                  <mssgle:LineSegment
+                    End="18,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[Sort Output]"
+          TopLeft="364.333333333334,474">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="211.666666666666,45"
+              Start="0,0"
+              End="204.166666666666,45">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="101.833333333333,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="101.833333333333,0"
+                    Point2="105.833333333333,0"
+                    Point3="105.833333333333,4" />
+                  <mssgle:LineSegment
+                    End="105.833333333333,41" />
+                  <mssgle:CubicBezierSegment
+                    Point1="105.833333333333,41"
+                    Point2="105.833333333333,45"
+                    Point3="109.833333333333,45" />
+                  <mssgle:LineSegment
+                    End="204.166666666666,45" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[Derived Column Output]"
+          TopLeft="851,358">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-107.833333333333,35.333333333334"
+              Start="0,0"
+              End="-107.833333333333,27.833333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.666666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.666666666667"
+                    Point2="0,17.666666666667"
+                    Point3="-4,17.666666666667" />
+                  <mssgle:LineSegment
+                    End="-103.833333333333,17.666666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-103.833333333333,17.666666666667"
+                    Point2="-107.833333333333,17.666666666667"
+                    Point3="-107.833333333333,21.666666666667" />
+                  <mssgle:LineSegment
+                    End="-107.833333333333,27.833333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[update]"
+          TopLeft="595.333333333334,632">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="299.666666666666,74"
+              Start="0,0"
+              End="299.666666666666,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.1989881956155" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.1989881956155"
+                    Point2="0,30.1989881956155"
+                    Point3="4,30.1989881956155" />
+                  <mssgle:LineSegment
+                    End="295.666666666666,30.1989881956155" />
+                  <mssgle:CubicBezierSegment
+                    Point1="295.666666666666,30.1989881956155"
+                    Point2="299.666666666666,30.1989881956155"
+                    Point3="299.666666666666,34.1989881956155" />
+                  <mssgle:LineSegment
+                    End="299.666666666666,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="125.218333333333,35.1989881956155,31.605,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Entrepot.Paths[OLE DB Source Output]"
+          TopLeft="198.333333333333,114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.333333333333,121"
+              Start="0,0"
+              End="-18.333333333333,113.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,56.5"
+                    Point2="0,60.5"
+                    Point3="-4,60.5" />
+                  <mssgle:LineSegment
+                    End="-14.333333333333,60.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.333333333333,60.5"
+                    Point2="-18.333333333333,60.5"
+                    Point3="-18.333333333333,64.5" />
+                  <mssgle:LineSegment
+                    End="-18.333333333333,113.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
